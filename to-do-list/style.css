@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #dbeafe, #e9d5ff);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+h1 {
+    text-align: center;
+    color: #6d28d9;
+    margin-bottom: 12px;
+}
+
+p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    background: #7c3aed;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #5b21b6;
+}
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: #f3f0ff;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+li span {
+    flex: 1;
+}
+
+li span.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+li button {
+    padding: 8px 10px;
+    background: #ef4444;
+}
+
+li button:hover {
+    background: #b91c1c;
+}
+
+#taskCount {
+    margin-top: 20px;
+    margin-bottom: 0;
+    font-weight: bold;
+}
